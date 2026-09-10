@@ -49,7 +49,8 @@ int main(){
 	cout<<"Enter elements:";
 	for(int i=0;i<n;i++)
 		cin>>a[i];
-	
+	// arr = [2, 4, 1, 3, 5]
+	// output 3	
 	cout<<"Count:"<<inversionCount(a,n)<<endl;	
 	
 	return 0;
