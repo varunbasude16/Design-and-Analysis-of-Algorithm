@@ -15,9 +15,10 @@ int fib(int n){
 int main(){
     int n;
     cout<<"enter n:";
-    cin>>n;
-// n ist he index
+    cin>>n; // n is the index
     cout<<fib(n)<<endl;
-
+	
+		// output 5 for n=5
+		// output 4 for n=3
     return 0;
 }
