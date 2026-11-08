@@ -50,12 +50,12 @@ Node* LCA(Node* root, Node* p, Node* q){
 	return left? left:right;
 }
 Node* findNode(Node* root, int val) {
-    if (!root) 
+    if (root==NULL) 
 		return nullptr;
     if (root->val==val) 
 		return root;
     Node* left=findNode(root->left,val);
-    	if(left) 
+    	if(left!=NULL) 
 		return left;
     return findNode(root->right,val);
 }
