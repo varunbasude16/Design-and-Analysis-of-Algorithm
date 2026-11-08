@@ -31,7 +31,9 @@ int main(){
 		cin>>a[i];
 		
 	NGE(a,n);
-
+// Enter n:6                      
+// Enter elements: 11 13 21 3 6 0
+// result:13 21 -1 6 -1 -1 
 	
 	return 0;
 }
