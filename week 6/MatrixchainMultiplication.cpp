@@ -11,9 +11,7 @@ int matrixChainOrder(vector<int> &d,int n){
 			int j=i+len-1;
 			C[i][j]=INT_MAX;
 			for(int k=i;k<j;k++){
-				int cost=C[i][k]+C[k+1][j]+d[i-1]*d[k]*d[j];
-				if(cost<C[i][j])
-					C[i][j]=cost;
+				C[i][j]=min(C[i][j],C[i][k]+C[k+1][j]+d[i-1]*d[k]*d[j]);
  			}
  		}		
  	}
